@@ -26,6 +26,7 @@ function generateProblem() {
     //console.log("args: " + arguments[0])
     if(arguments[0] == "onclick" && input != a+b){
         alert("Your answer was incorrect. Please try again.");
+        inputfield.value = ""
     }
 
 }
