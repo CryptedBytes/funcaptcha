@@ -9,8 +9,8 @@ var inputfield = document.getElementById("answerinput");
 inputfield.addEventListener('input', () =>{
     let problemlabel = document.getElementById("problemlabel");
     let inputlen = inputfield.value.length
-    console.log("Length of input: " + inputlen);
-    console.log("text changed");
+    //console.log("Length of input: " + inputlen);
+    //console.log("text changed");
     if(inputlen > 0)  generateProblem();
 });
 
@@ -25,7 +25,7 @@ function generateProblem() {
 
     //console.log("args: " + arguments[0])
     if(arguments[0] == "onclick" && input != a+b){
-        alert("Wrong!!!!!!");
+        alert("Your answer was incorrect. Please try again.");
     }
 
 }
