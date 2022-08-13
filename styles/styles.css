@@ -26,3 +26,15 @@ h3{
     background-color: rgb(255, 136, 0);
     color: black;
 }
+
+
+/* remove arrows from the input field*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
