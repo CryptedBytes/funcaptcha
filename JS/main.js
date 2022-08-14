@@ -3,7 +3,7 @@ generateProblem();
 //   problemform.addEventListener('submit', (event) => {
 //     generateProblem();
 // });
-var a, b, solved;
+var a, b, solved, lastInputLen;
 
 var inputfield = document.getElementById("answerinput");
 inputfield.addEventListener('input', () =>{
@@ -11,7 +11,9 @@ inputfield.addEventListener('input', () =>{
     let inputlen = inputfield.value.length
     //console.log("Length of input: " + inputlen);
     //console.log("text changed");
-    if(inputlen > 0)  generateProblem();
+    if(inputlen > 0 && inputlen > lastInputLen)  generateProblem();
+  
+    lastInputLen=inputfield.value.length
 });
 
 function generateProblem() {
