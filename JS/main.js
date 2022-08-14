@@ -22,14 +22,16 @@ function generateProblem() {
    
 
     //console.log("args: " + arguments[0])
-    if(arguments[0] == "onclick" && input != a+b){
-        alert("Your answer was incorrect. Please try again.");
-        inputfield.value = ""
-    }
-    else if(arguments[0] == "onclick" && inputfield.value == ""){
+    
+    if(arguments[0] == "onclick" && inputfield.value == ""){
         alert("Please enter your answer on the input field.");
         inputfield.value = ""
     }
+    else if(arguments[0] == "onclick" && input != a+b){
+        alert("Your answer was incorrect. Please try again.");
+        inputfield.value = ""
+    }
+    
     else if(arguments[0] == "onclick" && input == a+b){
         var sendbtn = document.getElementById("sendbtn");
         sendbtn.disabled = true
