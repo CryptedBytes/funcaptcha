@@ -11,7 +11,7 @@ inputfield.addEventListener('input', () =>{
     let inputlen = inputfield.value.length
     //console.log("Length of input: " + inputlen);
     //console.log("text changed");
-    if(inputlen > 0 && inputlen > lastInputLen)  generateProblem();
+    if(inputlen > 0)  generateProblem();
   
     lastInputLen=inputfield.value.length
 });
