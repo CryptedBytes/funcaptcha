@@ -3,7 +3,7 @@ generateProblem();
 //   problemform.addEventListener('submit', (event) => {
 //     generateProblem();
 // });
-var a, b, solved, lastInputLen;
+var a, b, solved, lastInputLen = -1;
 
 var inputfield = document.getElementById("answerinput");
 inputfield.addEventListener('input', () =>{
